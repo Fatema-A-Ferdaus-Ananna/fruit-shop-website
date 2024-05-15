@@ -199,6 +199,7 @@ header {
   color: black;
 }
 
+/* section */
 .body {
   padding: 2rem;
   background: rgba(255, 255, 0, 0);
@@ -207,6 +208,10 @@ header {
 .ingredients {
   padding: 2rem;
   background: rgba(0, 247, 255, 0);
+}
+
+.why {
+  background: #f5f5f5;
 }
 
 .featured {
@@ -231,8 +236,8 @@ header {
   width: calc(94% / 2);
 }
 
-.title {
-  background: #00ffbf00;
+.title-text {
+  background: #ff009d00;
   color: var(--theme-color);
   font-size: medium;
   font-weight: 700;
