@@ -23,7 +23,7 @@
 }
 
 .navbar {
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   padding: 0 2rem;
   width: 100%;
