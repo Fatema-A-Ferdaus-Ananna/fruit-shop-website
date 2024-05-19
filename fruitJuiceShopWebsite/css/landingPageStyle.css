@@ -23,7 +23,7 @@
 }
 
 .navbar {
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   padding: 0 2rem;
   width: 100%;
@@ -319,7 +319,7 @@ header {
 }
 /*Responsive*/
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
   .nav-menu {
     flex-wrap: wrap;
     justify-content: left;
@@ -349,7 +349,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (min-width: 767px) and (max-width: 991px) {
   .opt {
     position: absolute;
     padding: 0.4rem 0.5rem;
@@ -405,7 +405,34 @@ header {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 767px) {
+  .opt {
+    position: absolute;
+    padding: 0.4rem 0.5rem;
+    display: block;
+    color: var(--theme-color);
+    font-size: 22px;
+    border-radius: 50%;
+    z-index: 4;
+    cursor: pointer;
+  }
+
+  #logo-icon {
+    opacity: 40%;
+  }
+
+  .nav-menu li {
+    display: none;
+  }
+
+  .account {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
   .featured-row {
     background: rgba(0, 128, 128, 0);
   }
