@@ -102,6 +102,7 @@
 
 .account {
   background: rgba(255, 0, 0, 0);
+  display: flex;
 }
 
 .btn {
@@ -317,6 +318,45 @@ header {
 .pro-photo1 .img {
   width: 100%;
 }
+
+.order-now-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: rgba(102, 51, 153, 0);
+}
+
+.order-now-btn-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.order-now-col:nth-child(1) {
+  width: 60%;
+  background: rgba(216, 112, 147, 0);
+}
+
+.order-now-col:nth-child(2) {
+  width: 30%;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.order-now-btn {
+  border: var(--btn-border);
+  color: var(--theme-color);
+  background: white;
+  transition: var(--transiton-btn);
+}
+
+.order-now-btn:hover {
+  border: var(--btn-border);
+  color: white;
+  background: var(--theme-color);
+}
 /*Responsive*/
 
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
@@ -403,6 +443,18 @@ header {
     display: flex;
     flex-wrap: wrap;
   }
+
+  .order-now-row {
+    flex-direction: column;
+  }
+
+  .order-now-col:nth-child(1) {
+    width: 100%;
+  }
+
+  .order-now-col:nth-child(2) {
+    width: 60%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -466,5 +518,33 @@ header {
 
   .pro-photo {
     width: 100%;
+  }
+
+  .ingredients-row {
+    flex-direction: column;
+  }
+
+  .ingredients-col {
+    background: rgba(255, 166, 0, 0);
+    width: calc(100% / 1);
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .order-now-row {
+    flex-direction: column;
+    background: #0c131200;
+  }
+
+  .order-now-col {
+    width: 100%;
+  }
+
+  .order-now-col:nth-child(1) {
+    width: 100%;
+  }
+
+  .order-now-col:nth-child(2) {
+    width: 60%;
   }
 }
