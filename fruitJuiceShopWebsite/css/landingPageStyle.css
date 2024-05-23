@@ -485,6 +485,11 @@ header {
     align-items: center;
   }
 
+  .header-content {
+    width: 90%;
+    max-width: 500px;
+  }
+
   .featured-row {
     background: rgba(0, 128, 128, 0);
   }
