@@ -22,7 +22,7 @@
   --transiton-btn: 1.5s;
 } */
 
-.container-signIn-signUp {
+.container-signUp {
   position: absolute;
   top: 90px;
   width: 100%;
@@ -30,7 +30,21 @@
   background: #aac0495b;
   display: flex;
   justify-content: center;
-  /* flex-direction: column; */
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  display: none;
+}
+
+.container-signIn {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  height: calc(100vh - 12vh);
+  background: #aac0495b;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
   display: none;

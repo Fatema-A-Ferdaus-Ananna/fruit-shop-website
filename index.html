@@ -302,9 +302,9 @@
       </div>
     </section>
 
-    <div class="container-signIn-signUp">
+    <div class="container-signUp">
       <div class="container">
-        <div class="cancel-btn">
+        <div class="cancel-btn" id="cancel-signUp">
           <i class="fa-solid fa-xmark"></i>
         </div>
         <div class="heaing">
@@ -313,10 +313,37 @@
 
         <div class="input-form">
           <form action="" class="login-form">
-            <input type="text" placeholder="Email Name" />
-            <input type="text" placeholder="Email address" />
-            <input type="password" placeholder="Enter password" />
-            <input type="password" placeholder="Confirm Enter password" />
+            <input type="text" placeholder="Email Name" required />
+            <input type="text" placeholder="Email address" required />
+            <input type="password" placeholder="Enter password" required />
+            <input type="password" placeholder="Confirm Enter password" required />
+            <button type="submit" class="login-btn">Sign In</button>
+          </form>
+        </div>
+
+        <div class="alter-media">
+          <h1 class="heaing">OR</h1>
+          <div class="social-media">
+            <i class="fa-brands fa-google reg-icon"></i>
+            <i class="fa-brands fa-facebook reg-icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-signIn">
+      <div class="container">
+        <div class="cancel-btn" id="cancel-signIn">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="heaing">
+          <h1 class="heaing">Sign In Account</h1>
+        </div>
+
+        <div class="input-form">
+          <form action="" class="login-form">
+            <input type="text" placeholder="Email address" required />
+            <input type="password" placeholder="Enter password" required />
             <button type="submit" class="login-btn">Sign In</button>
           </form>
         </div>
