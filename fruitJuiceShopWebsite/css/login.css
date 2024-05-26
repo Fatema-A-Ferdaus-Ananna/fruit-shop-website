@@ -38,7 +38,7 @@
 
 .container {
   width: 35%;
-  min-width: 350px;
+  /* min-width: 350px; */
   border-radius: 2rem;
   display: flex;
   flex-direction: column;
