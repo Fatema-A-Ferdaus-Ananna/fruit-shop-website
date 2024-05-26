@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -20,29 +20,54 @@
   --border-radius: 5px;
 
   --transiton-btn: 1.5s;
+} */
+
+.container-signIn-signUp {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  height: calc(100vh - 12vh);
+  background: #aac0495b;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  align-items: center;
+  flex-wrap: wrap;
+  display: none;
 }
 
 .container {
-  width: 450px;
-  position: absolute;
-  right: 0;
-  top: 25%;
-  background: tan;
+  width: 35%;
+  min-width: 400px;
   border-radius: 2rem;
-
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   padding: 2rem;
   color: var(--theme-color);
   background: var(--text-color);
+  position: relative;
 }
 
-.register {
-  left: 0;
-  top: 25%;
+.cancel-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  height: 30px;
+  width: 30px;
   display: flex;
-  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.cancel-btn:hover {
+  background: var(--theme-color);
+  color: var(--text-color);
 }
 
 .heaing {
@@ -53,10 +78,10 @@
   text-align: center;
 }
 
-.input-form {
-}
+/* .input-form {
+} */
 
-.login {
+.login-form {
   background: rgba(96, 84, 107, 0);
   display: flex;
   flex-direction: column;
@@ -113,14 +138,15 @@ input::placeholder {
   align-items: center;
 }
 
-.icon {
+.reg-icon {
   padding: 0.3rem;
   margin: 0 0.5rem;
   border: var(--btn-border);
   border-radius: var(--border-radius);
   transition: 0.6s;
+  cursor: pointer;
 }
 
-.icon:hover {
+.reg-icon:hover {
   box-shadow: 0 0 5px #aac049;
 }
