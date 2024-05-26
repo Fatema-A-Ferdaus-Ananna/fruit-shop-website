@@ -149,7 +149,7 @@
 header {
   /* margin-top: 90px; */
   width: 100vw;
-  min-height: calc(100vh);
+  min-height: calc(100vh - 12vh);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -599,7 +599,7 @@ header {
   .nav-menu {
     padding: 4rem 0;
     width: 300px;
-    min-height: calc(100vh);
+    min-height: calc(100vh + 12vh);
     position: absolute;
     top: 0;
     left: 0;
