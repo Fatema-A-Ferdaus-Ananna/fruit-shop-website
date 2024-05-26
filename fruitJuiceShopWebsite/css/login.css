@@ -150,3 +150,11 @@ input::placeholder {
 .reg-icon:hover {
   box-shadow: 0 0 5px #aac049;
 }
+
+/* responsive */
+
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 85%;
+  }
+}
