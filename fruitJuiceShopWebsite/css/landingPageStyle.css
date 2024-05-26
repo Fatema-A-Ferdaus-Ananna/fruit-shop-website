@@ -475,13 +475,14 @@ header {
   }
 
   .nav-menu {
+    padding: 3rem 0;
     width: 300px;
     min-height: calc(100vh - 12vh);
     position: absolute;
     top: 0;
     left: 0;
     background: var(--text-color);
-    display: flex;
+    display: none;
     flex-direction: column;
     box-shadow: 0 0 20px #000000;
   }
@@ -596,15 +597,16 @@ header {
   }
 
   .nav-menu {
+    padding: 4rem 0;
     width: 300px;
     min-height: calc(100vh - 12vh);
     position: absolute;
     top: 0;
     left: 0;
     background: var(--text-color);
-    display: flex;
     flex-direction: column;
     box-shadow: 0 0 20px #000000;
+    display: none;
   }
 
   #hide-menubar-btn {
