@@ -19,6 +19,8 @@
   --btn-border: 1px solid #aac049;
   --border-radius: 5px;
 
+  --heggit: calc(100vh - 12vh);
+
   --transiton-btn: 1.5s;
 }
 
@@ -477,7 +479,7 @@ header {
   .nav-menu {
     padding: 3rem 0;
     width: 300px;
-    min-height: calc(100vh);
+    min-height: calc(90px + var(--heggit));
     position: absolute;
     top: 0;
     left: 0;
@@ -599,7 +601,7 @@ header {
   .nav-menu {
     padding: 4rem 0;
     width: 300px;
-    min-height: calc(100vh);
+    min-height: calc(90px + var(--heggit));
     position: absolute;
     top: 0;
     left: 0;
