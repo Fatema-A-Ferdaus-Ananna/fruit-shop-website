@@ -476,7 +476,7 @@ header {
 
   .nav-menu {
     width: 300px;
-    min-height: 100vh;
+    min-height: calc(100vh - 12vh);
     position: absolute;
     top: 0;
     left: 0;
@@ -597,7 +597,7 @@ header {
 
   .nav-menu {
     width: 300px;
-    min-height: 100vh;
+    min-height: calc(100vh - 12vh);
     position: absolute;
     top: 0;
     left: 0;
