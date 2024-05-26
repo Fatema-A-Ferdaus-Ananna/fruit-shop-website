@@ -48,7 +48,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 255, 0.027);
+  background: rgba(0, 0, 255, 0);
 }
 
 .menu-btn {
@@ -80,6 +80,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#hide-menubar-btn {
+  display: none;
 }
 
 .nav-menu li {
@@ -346,6 +350,7 @@ header {
 }
 
 .order-now-btn {
+  margin-left: 1rem;
   border: var(--btn-border);
   color: var(--theme-color);
   background: white;
@@ -453,7 +458,7 @@ header {
   }
 }
 
-@media only screen and (min-width: 767px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .opt {
     position: absolute;
     padding: 0.4rem 0.5rem;
@@ -469,8 +474,48 @@ header {
     opacity: 40%;
   }
 
+  .nav-menu {
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px #000000;
+  }
+
+  #hide-menubar-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2rem;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--theme-color);
+    transition: 0.5s;
+  }
+
+  #hide-menubar-btn:hover {
+    background: var(--theme-color);
+    color: var(--text-color);
+  }
+
   .nav-menu li {
-    display: none;
+    width: 80%;
+    /* margin: 1rem; */
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+    border-bottom: 1px solid #aac049;
+    background: rgba(104, 0, 90, 0);
+    /* display: none; */
   }
 
   .account {
@@ -551,8 +596,48 @@ header {
     opacity: 40%;
   }
 
+  .nav-menu {
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px #000000;
+  }
+
+  #hide-menubar-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2rem;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--theme-color);
+    transition: 0.5s;
+  }
+
+  #hide-menubar-btn:hover {
+    background: var(--theme-color);
+    color: var(--text-color);
+  }
+
   .nav-menu li {
-    display: none;
+    width: 80%;
+    /* margin: 1rem; */
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+    border-bottom: 1px solid #aac049;
+    background: rgba(104, 0, 90, 0);
+    /* display: none; */
   }
 
   .account {
